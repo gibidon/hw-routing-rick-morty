@@ -1,0 +1,41 @@
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  a:hover {
+    color: rgb(238, 210, 210);
+  }
+
+  .greeting {
+    font-size: 32px;
+  }
+
+  .logo {
+    font-size: 40px;
+  }
+}
+
+.panel {
+  position: sticky;
+  height: 70px;
+  display: flex;
+  justify-content: start;
+  gap: 3rem;
+  font-size: 32px;
+  padding: 1rem 0.5rem;
+
+  text-decoration: none;
+  list-style-type: none;
+  // font-weight: 600;
+  background: transparent;
+  font-family: 'WubbaLubbaDubDub';
+  display: flex;
+  justify-content: space-around;
+
+  ul {
+    display: flex;
+    justify-content: end;
+    gap: 2rem;
+  }
+}

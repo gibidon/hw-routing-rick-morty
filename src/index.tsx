@@ -1,3 +1,4 @@
+import { BrowserRouter } from 'react-router-dom'
 import { createRoot } from 'react-dom/client'
 import { App } from './App'
 import './index.css'
@@ -10,4 +11,8 @@ if (!root) {
 
 const container = createRoot(root)
 
-container.render(<App />)
+container.render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
+)
