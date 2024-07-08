@@ -1,2 +1,4 @@
 # hw-routing-rick-morty
-training_routing
+
+bff is made with json-server, launch it using whis command:
+npx json-server --port 3001 --watch db.json
