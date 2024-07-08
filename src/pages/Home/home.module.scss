@@ -1,0 +1,32 @@
+.title {
+  margin: 0 auto;
+}
+
+.mainLayout {
+  max-width: 1078px;
+  margin: 0 auto;
+  // background-color: rgb(242, 246, 255);
+  padding: 2rem 1rem;
+}
+
+.mainContent {
+  display: flex;
+  flex-wrap: nowrap;
+  // justify-content: space-evenly;
+  // grid-template-columns: repeat(autofit, minmax(200px, 1fr));
+  gap: 1rem;
+
+  .categoryCard {
+    max-width: 170px;
+
+    object-fit: cover;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .categoryCard:hover {
+    opacity: 0.75;
+  }
+}
