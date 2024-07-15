@@ -11,3 +11,16 @@
     text-decoration: none;
   }
 }
+
+.goBackBtn {
+  font-family: inherit;
+  font-size: 30px;
+  background-color: inherit;
+  color: white;
+  outline: none;
+  padding: 10px 8px;
+}
+
+.goBackBtn:hover {
+  color: lightgray;
+}

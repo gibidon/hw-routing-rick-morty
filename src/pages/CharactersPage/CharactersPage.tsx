@@ -1,6 +1,8 @@
 import { useFetch } from '../../hooks/useFetch'
+import { useNavigate } from 'react-router-dom'
 import { CharacterTemplate } from '../../components/CharacterTemplate/CharacterTemplate'
 import * as styles from './charactersPage.module.scss'
+import { useState } from 'react'
 
 export interface ICharacter {
   id: number
@@ -15,8 +17,7 @@ export interface ICharacter {
 
 export const CharactersPage = () => {
   const { data, error, isLoading } = useFetch<ICharacter[]>(`http://localhost:3001/characters`)
-
-  console.log('###data: ', data)
+  const navigate = useNavigate()
 
   const dataElems = data?.map((character) => (
     <CharacterTemplate key={character.id} character={character} />
@@ -27,6 +28,12 @@ export const CharactersPage = () => {
       {isLoading && <div>Loading..</div>}
       <div className={styles.container}>{dataElems}</div>
       {error && <div>Error: {error}</div>}
+
+      <div>
+        <button onClick={() => navigate(-1)} className={styles.goBackBtn}>
+          Go back
+        </button>
+      </div>
     </>
   )
 }

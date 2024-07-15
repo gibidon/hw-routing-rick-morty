@@ -1,5 +1,5 @@
 import { useFetch } from '../../hooks/useFetch'
-import { LocationTemplate } from '../../components/LocationTemplate'
+import { LocationTemplate } from '../../components/LocationTemplate/LocationTemplate'
 import * as styles from './locationsPage.module.scss'
 
 export interface ILocation {

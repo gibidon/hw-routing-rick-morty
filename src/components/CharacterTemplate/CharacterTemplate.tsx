@@ -24,11 +24,7 @@ export const CharacterTemplate = ({ character }: CharacterProps) => {
           <img src={image} alt={'character image'} />
         </li>
       </ul>
-      <div>
-        <button onClick={() => navigate(-1)} className={styles.goBackBtn}>
-          Go back
-        </button>
-      </div>
+      
     </Link>
   )
 }
